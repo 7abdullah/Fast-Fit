@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+  --primary: #2ECC71;
+  --secondary: #FF8C00;
+  --accent: #DFFF00;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.bg-electric-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, #1a1a1a 100%);
+}
+
+.animate-bounce-slow {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.logo-card {
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.logo-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2ECC71;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #27ae60;
+}
+
+/* Section Transitions */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Team avatars subtle hover */
+#logos .grid>div:hover {
+  transform: translateY(-4px);
+  transition: transform 150ms ease-out;
+}

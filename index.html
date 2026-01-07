@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast&Fit | Fuel Your Day A Good Way</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans selection:bg-[#2ECC71] selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-[#2ECC71] rounded-lg flex items-center justify-center">
+                    <i data-lucide="zap" class="text-white fill-current"></i>
+                </div>
+                <span class="text-2xl font-black tracking-tighter uppercase italic">Fast<span
+                        class="text-[#FF8C00]">&</span>Fit</span>
+            </div>
+            <div class="hidden md:flex gap-8 font-semibold text-sm uppercase tracking-widest">
+                <a href="#story" class="hover:text-[#2ECC71] transition-colors">Mission</a>
+                <a href="#logos" class="hover:text-[#2ECC71] transition-colors">Our brilliant team</a>
+                <a href="#visuals" class="hover:text-[#2ECC71] transition-colors">Experience</a>
+            </div>
+            <button
+                class="bg-[#FF8C00] hover:bg-[#e67e00] text-white px-6 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105">
+                COLLABORATE
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-[#2ECC71]/10 rounded-full blur-[120px]">
+            </div>
+            <div class="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#FF8C00]/10 rounded-full blur-[120px]">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div class="hero-content">
+                <div
+                    class="inline-block px-4 py-1.5 bg-[#DFFF00] text-slate-900 text-xs font-black uppercase rounded-full mb-6 tracking-widest">
+                    Fuel for the Modern Hustle
+                </div>
+                <h1 class="text-7xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8">
+                    FAST <br /> <span class="text-[#2ECC71]">&</span> FIT
+                </h1>
+                <p class="text-xl text-slate-600 max-w-md leading-relaxed mb-10">
+                    Redefining campus dining with nutrient-dense meals served at lightning speed.
+                    <span class="font-bold text-slate-900 italic">Fuel your day a good way.</span>
+                </p>
+                <div class="flex gap-4">
+                    <a href="#story"
+                        class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold flex items-center gap-2 hover:bg-slate-800 transition-all">
+                        Discover the Mission <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+
+                    <div class="flex -space-x-3 items-center">
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"><img
+                                src="https://i.pravatar.cc/100?u=1" alt="User"></div>
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"><img
+                                src="https://i.pravatar.cc/100?u=2" alt="User"></div>
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden"><img
+                                src="https://i.pravatar.cc/100?u=3" alt="User"></div>
+                        <span class="pl-5 text-xs font-bold text-slate-500 uppercase tracking-tighter">500+ Students
+                            Fueled Daily</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div
+                    class="relative rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+                    <img src="https://r2-bucket.flowith.net/f/4137b167ce9421b3/food_truck_campus_scene_index_0%401024x1024.jpeg"
+                        alt="Fast&Fit Campus Scene" class="w-full h-auto">
+                </div>
+                <div
+                    class="absolute -bottom-10 -left-10 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden md:block animate-bounce-slow">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-[#2ECC71]/10 rounded-xl">
+                            <i data-lucide="heart" class="text-[#2ECC71]"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-bold uppercase">Health Factor</p>
+                            <p class="text-lg font-black italic">100% CLEAN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Story -->
+    <section id="story" class="py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16 items-center">
+                <div class="md:col-span-5 story-image relative">
+                    <div class="aspect-square bg-slate-100 rounded-[3rem] overflow-hidden">
+                        <img src="https://r2-bucket.flowith.net/f/a131d703e1a77f1f/fast_and_fit_social_media_graphic_index_3%401024x1024.jpeg"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            alt="Brand vibe">
+                    </div>
+                    <div
+                        class="absolute -top-6 -right-6 w-32 h-32 bg-[#FF8C00] rounded-full flex items-center justify-center text-white text-center p-4 transform -rotate-12 shadow-lg">
+                        <p class="text-xs font-black">GEN Z APPROVED</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <span class="text-[#2ECC71] font-black text-xs uppercase tracking-[0.3em] mb-6 block">The
+                        Challenge</span>
+                    <h2 class="text-5xl md:text-6xl font-black mb-10 leading-[1.1] uppercase italic">
+                        Why should <span class="text-[#FF8C00]">Fast</span> mean <span
+                            class="text-slate-300">Unhealthy?</span>
+                    </h2>
+
+                    <div class="space-y-8 text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        <p>For too long, the campus lifestyle has been synonymous with nutritional compromise. Students
+                            are forced to choose between the convenience of processed fast food or the time-drain of
+                            healthy meal prep.</p>
+                        <p class="text-slate-900 font-medium border-l-4 border-[#2ECC71] pl-6 italic">
+                            "We didn't just want to build a food truck; we wanted to engineer a performance tool for the
+                            academic students."
+                        </p>
+                        <p>Fast&Fit is our answer. By optimizing every step of the supply chain and kitchen workflow, we
+                            deliver chef-curated, nutrient-dense meals in under 5 minutes. No compromises. Just
+                            performance.</p>
+                    </div>
+                    <div id="brand-story-content" class="space-y-6 text-lg text-slate-600 leading-relaxed">
+                        <!-- Content loaded from JSON -->
+                    </div>
+                    <div class="grid grid-cols-3 gap-6 mt-12">
+                        <div class="text-center">
+                            <div class="text-4xl font-black text-[#2ECC71] mb-2">0</div>
+                            <p class="text-xs font-bold uppercase text-slate-400">Hidden Junk</p>
+                        </div>
+                        <div class="text-center border-x border-slate-100">
+                            <div class="text-4xl font-black text-[#FF8C00] mb-2">5m</div>
+                            <p class="text-xs font-bold uppercase text-slate-400">Avg. Prep Time</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-black text-[#DFFF00] bg-slate-900 inline-block px-2 mb-2">2026
+                            </div>
+                            <p class="text-xs font-bold uppercase text-slate-400">Launch Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Concepts -->
+    <section id="logos" class="py-32 bg-slate-900 text-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8">
+                <div>
+                    <p class="text-sm font-semibold tracking-[0.2em] text-slate-400 mb-2">
+                        MEET THE TEAM
+                    </p>
+                    <h2 class="text-4xl md:text-6xl font-black italic leading-tight mb-3">
+                        OUR <br />
+                        <span class="text-[#2ECC71]">TEAM</span>
+                    </h2>
+                    <p class="max-w-md text-slate-300 text-sm md:text-base">
+                        A passionate group of students building Fast&Fit to bring
+                        healthier fast food to our campus.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+                <!-- 1 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">AS</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Abdullah Salim</p>
+                    <p class="text-xs text-slate-400">Brand &Web</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">MH</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Mahmoud Hussam</p>
+                    <p class="text-xs text-slate-400">Business case</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">AM</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Abdallah Mohamed</p>
+                    <p class="text-xs text-slate-400">Sales & Channels Manager</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">HA</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Hazem Ahmed</p>
+                    <p class="text-xs text-slate-400">Finance & Funding Officer</p>
+                </div>
+
+                <!-- 5 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">AH</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Ali Hossam</p>
+                    <p class="text-xs text-slate-400">Risk Manager</p>
+                </div>
+
+                <!-- 6 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">MS</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Mohamed Samy</p>
+                    <p class="text-xs text-slate-400">Legal & Compliance Manager</p>
+                </div>
+
+                <!-- 7 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">YG</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Youhanna George</p>
+                    <p class="text-xs text-slate-400">Business Planning Manager</p>
+                </div>
+
+                <!-- 8 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">AM</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Abdelrahman Abdelhamid</p>
+                    <p class="text-xs text-slate-400">Team & HR Manager</p>
+                </div>
+
+                <!-- 9 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">OS</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Omar Sherif</p>
+                    <p class="text-xs text-slate-400">Marketing Manager</p>
+                </div>
+
+                <!-- 10 -->
+                <div class="flex flex-col items-center text-center gap-2
+                  hover:-translate-y-1 hover:scale-105 transition-transform duration-200">
+                    <div
+                        class="w-16 h-16 rounded-full bg-slate-800 flex items-center justify-center ring-2 ring-[#2ECC71]/60">
+                        <span class="text-lg font-bold text-white">AM</span>
+                    </div>
+                    <p class="text-sm font-semibold tracking-wide uppercase">Abdelrahman Mohamed</p>
+                    <p class="text-xs text-slate-400">Director of Vision & Mission</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    </div>
+
+    <div id="logo-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Logo cards injected here -->
+    </div>
+    </div>
+    </section>
+
+    <!-- Visualizations / Real World -->
+    <section id="visuals" class="py-32 bg-white overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-5xl font-black uppercase italic mb-6">Real-World <span
+                        class="text-[#FF8C00]">Impact</span></h2>
+                <p class="text-slate-500">From the bustling campus walkways to the hands of students, Fast&Fit is
+                    designed to integrate seamlessly into college life.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Large Feature: Truck -->
+                <div class="relative group overflow-hidden rounded-[2.5rem] md:col-span-2 aspect-[21/9]">
+                    <img src="https://r2-bucket.flowith.net/f/4137b167ce9421b3/food_truck_campus_scene_index_0%401024x1024.jpeg"
+                        alt="Truck"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-12">
+                        <div>
+                            <span
+                                class="bg-[#2ECC71] text-white px-3 py-1 text-xs font-black uppercase rounded mb-4 inline-block">Primary
+                                Touchpoint</span>
+                            <h3 class="text-4xl font-black text-white italic">The Campus Cruiser</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary: Packaging -->
+                <div class="relative group overflow-hidden rounded-[2.5rem] aspect-square">
+                    <img src="https://r2-bucket.flowith.net/f/a844115a86fdcbeb/product_mockup_eco_friendly_bowls_cups_index_1%401024x1024.jpeg"
+                        alt="Packaging"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-8 text-center">
+                        <div class="text-white">
+                            <h4 class="text-2xl font-black mb-2 italic uppercase">Eco-Conscious</h4>
+                            <p class="text-sm">Compostable bowls and fiber-based cups to minimize campus waste.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary: Staff -->
+                <div class="relative group overflow-hidden rounded-[2.5rem] aspect-square">
+                    <img src="https://r2-bucket.flowith.net/f/b0c9f5d282c23400/student_worker_apron_logo_index_2%401024x1024.jpeg"
+                        alt="Staff"
+                        class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    <div
+                        class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-8 text-center">
+                        <div class="text-white">
+                            <h4 class="text-2xl font-black mb-2 italic uppercase">Student Powered</h4>
+                            <p class="text-sm">Uniforms that feel like premium streetwear, boosting staff morale and
+                                brand pride.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-20 text-white border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-12">
+                <div class="text-center md:text-left">
+                    <div class="flex items-center gap-2 justify-center md:justify-start mb-6">
+                        <div class="w-12 h-12 bg-[#2ECC71] rounded-xl flex items-center justify-center">
+                            <i data-lucide="zap" class="text-white fill-current"></i>
+                        </div>
+                        <span class="text-3xl font-black tracking-tighter uppercase italic">Fast<span
+                                class="text-[#FF8C00]">&</span>Fit</span>
+                    </div>
+                    <p class="text-slate-500 max-w-sm">Helping students perform at their peak through intelligent
+                        nutrition and rapid service.</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="text-xl font-black mb-4 uppercase italic">Ready to fuel the hustle?</h4>
+                    <button
+                        class="bg-[#2ECC71] hover:bg-[#27ae60] text-white px-10 py-4 rounded-full font-black tracking-widest transition-all transform hover:scale-105">
+                        INVEST IN THE TRUCK
+                    </button>
+                </div>
+            </div>
+            <div
+                class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-slate-600">
+                <p>&copy; 2026 Developed by Abdullah Salim - 2500689<br>
+                    <a href="https://www.instagram.com/3bdullah_salim/?utm_source=ig_web_button_share_sheet"
+                        target="_blank" class="hover:text-[#2ECC71] transition-colors">Instagram</a> |
+                    <a href="mailto:m.salim7799@gmail.com" class="hover:text-[#2ECC71] transition-colors"
+                        target="_blank">Email</a>
+                </p>
+
+                <div class="flex gap-8">
+                    <a href="#" target="_blank" class="hover:text-[#2ECC71]">Instagram</a>
+                    <a href="#" class="hover:text-[#2ECC71]">TikTok</a>
+                    <a href="#" class="hover:text-[#2ECC71]">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
